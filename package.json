@@ -1,0 +1,26 @@
+{
+  "name": "pani-bot",
+  "version": "1.0.0",
+  "description": "discord.js bot client",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiechel/pani-bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tiechel/pani-bot/issues"
+  },
+  "homepage": "https://github.com/tiechel/pani-bot#readme",
+  "dependencies": {
+    "discord.js": "github:discordjs/discord.js",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  }
+}
