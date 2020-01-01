@@ -12,7 +12,7 @@ client.on('ready', () => {
 client.on('message', message => {
   if(message.content.match(/www.fantasy-earth.com/)) {
     message.reply('ﾍｱｯ')
-    message.delete(500)
+    message.delete(10000)
   }
 })
 
