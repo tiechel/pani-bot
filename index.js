@@ -10,8 +10,9 @@ client.on('ready', () => {
 })
 
 client.on('message', message => {
-  if(message.content === 'http://www.fantasy-earth.com/') {
+  if(message.content.match(/www.fantasy-earth.com/)) {
     message.reply('ﾍｱｯ')
+    message.delete(500)
   }
 })
 
