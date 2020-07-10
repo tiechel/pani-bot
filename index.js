@@ -30,7 +30,7 @@ client.on('message', message => {
       message.reply('ﾍｱｯ');
     }
 
-    message.delete({timeout: 10000})
+    message.delete({timeout: 1000})
   }
 })
 
