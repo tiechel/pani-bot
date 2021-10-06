@@ -1,10 +1,16 @@
 {
   "name": "pani-bot",
   "version": "1.0.0",
+  "licenses": [],
+  "private": true,
   "description": "discord.js bot client",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "service-start": "pm2 start ecosystem.config.js --env=production --update-env",
+    "service-stop": "pm2 stop ecosystem.config.js",
+    "service-reload": "pm2 reload ecosystem.config.js --env=production --update-env"
   },
   "repository": {
     "type": "git",
@@ -17,12 +23,21 @@
   },
   "homepage": "https://github.com/tiechel/pani-bot#readme",
   "dependencies": {
+    "@discordjs/builders": "^0.6.0",
+    "@discordjs/rest": "^0.1.0-canary.0",
+    "axios": "^0.22.0",
+    "discord-api-types": "^0.23.1",
     "discord.js": "github:discordjs/discord.js",
-    "dotenv": "^8.2.0",
-    "moment": "^2.27.0",
-    "node-fetch": "^2.6.0"
+    "dotenv": "^10.0.0",
+    "moment": "^2.27.0"
   },
   "devDependencies": {
-    "eslint": "^6.8.0"
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "nodemon": "^2.0.13",
+    "prettier": "^2.4.1"
   }
 }
